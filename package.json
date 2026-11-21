@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm --prefix artifacts/zhadnye-igry run dev",
+    "build": "npm --prefix artifacts/zhadnye-igry run build",
+    "lint": "npm --prefix artifacts/zhadnye-igry run typecheck",
+    "test": "npm --prefix artifacts/zhadnye-igry run test",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "npm --prefix artifacts/zhadnye-igry run typecheck"
+  },
+  "private": true,
+  "dependencies": {
+    "@replit/connectors-sdk": "^0.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3"
+  }
+}
